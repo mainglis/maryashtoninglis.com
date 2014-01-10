@@ -28,10 +28,18 @@
 	    <img src="images/headerNoPadding.gif">
 	  </div>
 	  <div class="clear"></div>
-	  
+	  <div class="navbar">
+	    <ul class="nav nav-tabs">
+	      <li class="active"><a href="/index">About Me</a></li>
+	      <li><a href="/portfolios/index">Portfolio</a></li>
+	      <li class="active"><a href="resume/index">Resume</a></li>
+	    </ul>
+	  </div>
+	  <div class="hero-unit">
 	    <?php if(isset($content)) echo $content; ?>
 		<?php if(isset($client_files_body)) echo $client_files_body; ?>
-
+	  </div> <!--/hero-unit-->
+	</div> <!--/container -->
 
 	<!-- JAVASCRIPT________________________________________________________________________________________ -->
 
@@ -57,7 +65,7 @@
     <script src="/js/bootstrap-carousel.js"></script>
     <script src="/js/bootstrap-typeahead.js"></script>
 
-    <script src="/js/flexslider.js"></script>
+    <script src="jquery.flexslider.js"></script>
     <!-- Place in the <head>, after the three links -->
     
     // <script type="text/javascript" charset="utf-8">
